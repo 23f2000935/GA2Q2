@@ -1,0 +1,1016 @@
+{
+  "repository": "23f2000935/GA2Q2",
+  "branch": "main",
+  "commit_sha": "58dc9e97ef8484adac5e4d64a57d9f6d45cedf37",
+  "analyzed_at": "2026-07-17T05:50:31.636023+00:00",
+  "analysis_id": "main_58dc9e9_20260717T055031",
+  "analysis": {
+    "imports": {
+      "files": {
+        "app.py": {
+          "direct": [
+            "os"
+          ],
+          "from": [
+            "flask",
+            "flask_sqlalchemy",
+            "flask_jwt_extended"
+          ],
+          "normalized": [
+            "os",
+            "flask",
+            "flask-sqlalchemy",
+            "flask-jwt-extended"
+          ],
+          "external": [],
+          "local": [],
+          "hierarchical": [
+            {
+              "source": "import",
+              "module": "os",
+              "symbol": null,
+              "alias": null,
+              "root": "os",
+              "is_local": false,
+              "module_path": "os",
+              "leaf_path": "os",
+              "nodes": [
+                {
+                  "path": "os",
+                  "label": "os",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                }
+              ]
+            },
+            {
+              "source": "from",
+              "module": "flask",
+              "symbol": "Flask",
+              "alias": null,
+              "root": "flask",
+              "is_local": false,
+              "module_path": "flask",
+              "leaf_path": "flask.Flask",
+              "nodes": [
+                {
+                  "path": "flask",
+                  "label": "flask",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask.Flask",
+                  "label": "Flask",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "from",
+              "module": "flask",
+              "symbol": "jsonify",
+              "alias": null,
+              "root": "flask",
+              "is_local": false,
+              "module_path": "flask",
+              "leaf_path": "flask.jsonify",
+              "nodes": [
+                {
+                  "path": "flask",
+                  "label": "flask",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask.jsonify",
+                  "label": "jsonify",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "from",
+              "module": "flask",
+              "symbol": "request",
+              "alias": null,
+              "root": "flask",
+              "is_local": false,
+              "module_path": "flask",
+              "leaf_path": "flask.request",
+              "nodes": [
+                {
+                  "path": "flask",
+                  "label": "flask",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask.request",
+                  "label": "request",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "from",
+              "module": "flask_sqlalchemy",
+              "symbol": "SQLAlchemy",
+              "alias": null,
+              "root": "flask_sqlalchemy",
+              "is_local": false,
+              "module_path": "flask_sqlalchemy",
+              "leaf_path": "flask_sqlalchemy.SQLAlchemy",
+              "nodes": [
+                {
+                  "path": "flask_sqlalchemy",
+                  "label": "flask_sqlalchemy",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask_sqlalchemy.SQLAlchemy",
+                  "label": "SQLAlchemy",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask_sqlalchemy",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "from",
+              "module": "flask_jwt_extended",
+              "symbol": "JWTManager",
+              "alias": null,
+              "root": "flask_jwt_extended",
+              "is_local": false,
+              "module_path": "flask_jwt_extended",
+              "leaf_path": "flask_jwt_extended.JWTManager",
+              "nodes": [
+                {
+                  "path": "flask_jwt_extended",
+                  "label": "flask_jwt_extended",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask_jwt_extended.JWTManager",
+                  "label": "JWTManager",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask_jwt_extended",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "from",
+              "module": "flask_jwt_extended",
+              "symbol": "jwt_required",
+              "alias": null,
+              "root": "flask_jwt_extended",
+              "is_local": false,
+              "module_path": "flask_jwt_extended",
+              "leaf_path": "flask_jwt_extended.jwt_required",
+              "nodes": [
+                {
+                  "path": "flask_jwt_extended",
+                  "label": "flask_jwt_extended",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask_jwt_extended.jwt_required",
+                  "label": "jwt_required",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask_jwt_extended",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "from",
+              "module": "flask_jwt_extended",
+              "symbol": "create_access_token",
+              "alias": null,
+              "root": "flask_jwt_extended",
+              "is_local": false,
+              "module_path": "flask_jwt_extended",
+              "leaf_path": "flask_jwt_extended.create_access_token",
+              "nodes": [
+                {
+                  "path": "flask_jwt_extended",
+                  "label": "flask_jwt_extended",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask_jwt_extended.create_access_token",
+                  "label": "create_access_token",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask_jwt_extended",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "attribute",
+              "module": "os.environ",
+              "symbol": "get",
+              "alias": null,
+              "root": "os",
+              "is_local": false,
+              "inferred": true,
+              "module_path": "os.environ",
+              "leaf_path": "os.environ.get",
+              "nodes": [
+                {
+                  "path": "os",
+                  "label": "os",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "os.environ",
+                  "label": "environ",
+                  "kind": "Module",
+                  "depth": 1,
+                  "parent_path": "os",
+                  "relationship": "CONTAINS"
+                },
+                {
+                  "path": "os.environ.get",
+                  "label": "get",
+                  "kind": "Symbol",
+                  "depth": 2,
+                  "parent_path": "os.environ",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "attribute",
+              "module": "flask",
+              "symbol": "route",
+              "alias": null,
+              "root": "flask",
+              "is_local": false,
+              "inferred": true,
+              "module_path": "flask",
+              "leaf_path": "flask.route",
+              "nodes": [
+                {
+                  "path": "flask",
+                  "label": "flask",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask.route",
+                  "label": "route",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "attribute",
+              "module": "flask-sqlalchemy",
+              "symbol": "Column",
+              "alias": null,
+              "root": "flask-sqlalchemy",
+              "is_local": false,
+              "inferred": true,
+              "module_path": "flask-sqlalchemy",
+              "leaf_path": "flask-sqlalchemy.Column",
+              "nodes": [
+                {
+                  "path": "flask-sqlalchemy",
+                  "label": "flask-sqlalchemy",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask-sqlalchemy.Column",
+                  "label": "Column",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask-sqlalchemy",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "attribute",
+              "module": "flask.request",
+              "symbol": "get_json",
+              "alias": null,
+              "root": "flask",
+              "is_local": false,
+              "inferred": true,
+              "module_path": "flask.request",
+              "leaf_path": "flask.request.get_json",
+              "nodes": [
+                {
+                  "path": "flask",
+                  "label": "flask",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask.request",
+                  "label": "request",
+                  "kind": "Module",
+                  "depth": 1,
+                  "parent_path": "flask",
+                  "relationship": "CONTAINS"
+                },
+                {
+                  "path": "flask.request.get_json",
+                  "label": "get_json",
+                  "kind": "Symbol",
+                  "depth": 2,
+                  "parent_path": "flask.request",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "attribute",
+              "module": "flask",
+              "symbol": "run",
+              "alias": null,
+              "root": "flask",
+              "is_local": false,
+              "inferred": true,
+              "module_path": "flask",
+              "leaf_path": "flask.run",
+              "nodes": [
+                {
+                  "path": "flask",
+                  "label": "flask",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask.run",
+                  "label": "run",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "attribute",
+              "module": "flask-sqlalchemy",
+              "symbol": "String",
+              "alias": null,
+              "root": "flask-sqlalchemy",
+              "is_local": false,
+              "inferred": true,
+              "module_path": "flask-sqlalchemy",
+              "leaf_path": "flask-sqlalchemy.String",
+              "nodes": [
+                {
+                  "path": "flask-sqlalchemy",
+                  "label": "flask-sqlalchemy",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask-sqlalchemy.String",
+                  "label": "String",
+                  "kind": "Symbol",
+                  "depth": 1,
+                  "parent_path": "flask-sqlalchemy",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            },
+            {
+              "source": "attribute",
+              "module": "flask-sqlalchemy.func",
+              "symbol": "now",
+              "alias": null,
+              "root": "flask-sqlalchemy",
+              "is_local": false,
+              "inferred": true,
+              "module_path": "flask-sqlalchemy.func",
+              "leaf_path": "flask-sqlalchemy.func.now",
+              "nodes": [
+                {
+                  "path": "flask-sqlalchemy",
+                  "label": "flask-sqlalchemy",
+                  "kind": "Package",
+                  "depth": 0,
+                  "parent_path": null,
+                  "relationship": null
+                },
+                {
+                  "path": "flask-sqlalchemy.func",
+                  "label": "func",
+                  "kind": "Module",
+                  "depth": 1,
+                  "parent_path": "flask-sqlalchemy",
+                  "relationship": "CONTAINS"
+                },
+                {
+                  "path": "flask-sqlalchemy.func.now",
+                  "label": "now",
+                  "kind": "Symbol",
+                  "depth": 2,
+                  "parent_path": "flask-sqlalchemy.func",
+                  "relationship": "EXPOSES"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total_files": 1,
+        "total_python_files": 1,
+        "total_notebooks": 0,
+        "total_imports": 4,
+        "total_local_imports": 0
+      }
+    },
+    "semantic_graph": {
+      "files": {
+        "app.py": {
+          "module_name": "app",
+          "functions": [
+            {
+              "name": "health",
+              "qualified_name": "health",
+              "line_start": 28,
+              "line_end": 30,
+              "is_async": false
+            },
+            {
+              "name": "login",
+              "qualified_name": "login",
+              "line_start": 34,
+              "line_end": 38,
+              "is_async": false
+            },
+            {
+              "name": "list_users",
+              "qualified_name": "list_users",
+              "line_start": 43,
+              "line_end": 45,
+              "is_async": false
+            }
+          ],
+          "classes": [
+            {
+              "name": "User",
+              "qualified_name": "User",
+              "line_start": 20,
+              "line_end": 24,
+              "bases": [
+                "db.Model"
+              ]
+            }
+          ],
+          "calls": [
+            {
+              "name": "flask.Flask",
+              "canonical_root": "flask",
+              "line": 11,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "os.environ.get",
+              "canonical_root": "os",
+              "line": 12,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "os.environ.get",
+              "canonical_root": "os",
+              "line": 13,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask_sqlalchemy.SQLAlchemy",
+              "canonical_root": "flask-sqlalchemy",
+              "line": 16,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask_jwt_extended.JWTManager",
+              "canonical_root": "flask-jwt-extended",
+              "line": 17,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask-sqlalchemy.Column",
+              "canonical_root": "flask-sqlalchemy",
+              "line": 21,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask-sqlalchemy.Column",
+              "canonical_root": "flask-sqlalchemy",
+              "line": 22,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask-sqlalchemy.String",
+              "canonical_root": "flask-sqlalchemy",
+              "line": 22,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask-sqlalchemy.Column",
+              "canonical_root": "flask-sqlalchemy",
+              "line": 23,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask-sqlalchemy.String",
+              "canonical_root": "flask-sqlalchemy",
+              "line": 23,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask-sqlalchemy.Column",
+              "canonical_root": "flask-sqlalchemy",
+              "line": 24,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask-sqlalchemy.func.now",
+              "canonical_root": "flask-sqlalchemy",
+              "line": 24,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask.jsonify",
+              "canonical_root": "flask",
+              "line": 30,
+              "function": "health",
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask.route",
+              "canonical_root": "flask",
+              "line": 27,
+              "function": "health",
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask.request.get_json",
+              "canonical_root": "flask",
+              "line": 36,
+              "function": "login",
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask.jsonify",
+              "canonical_root": "flask",
+              "line": 38,
+              "function": "login",
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask.route",
+              "canonical_root": "flask",
+              "line": 33,
+              "function": "login",
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask.jsonify",
+              "canonical_root": "flask",
+              "line": 45,
+              "function": "list_users",
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask.route",
+              "canonical_root": "flask",
+              "line": 41,
+              "function": "list_users",
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask_jwt_extended.jwt_required",
+              "canonical_root": "flask-jwt-extended",
+              "line": 42,
+              "function": "list_users",
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "flask.run",
+              "canonical_root": "flask",
+              "line": 49,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "int",
+              "canonical_root": "int",
+              "line": 49,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            },
+            {
+              "name": "os.environ.get",
+              "canonical_root": "os",
+              "line": 49,
+              "function": null,
+              "is_local": false,
+              "is_external_api": true
+            }
+          ],
+          "apis": [
+            {
+              "name": "flask.Flask",
+              "package": "flask",
+              "line": 11,
+              "function": null
+            },
+            {
+              "name": "os.environ.get",
+              "package": "os",
+              "line": 12,
+              "function": null
+            },
+            {
+              "name": "os.environ.get",
+              "package": "os",
+              "line": 13,
+              "function": null
+            },
+            {
+              "name": "flask_sqlalchemy.SQLAlchemy",
+              "package": "flask-sqlalchemy",
+              "line": 16,
+              "function": null
+            },
+            {
+              "name": "flask_jwt_extended.JWTManager",
+              "package": "flask-jwt-extended",
+              "line": 17,
+              "function": null
+            },
+            {
+              "name": "flask-sqlalchemy.Column",
+              "package": "flask-sqlalchemy",
+              "line": 21,
+              "function": null
+            },
+            {
+              "name": "flask-sqlalchemy.Column",
+              "package": "flask-sqlalchemy",
+              "line": 22,
+              "function": null
+            },
+            {
+              "name": "flask-sqlalchemy.String",
+              "package": "flask-sqlalchemy",
+              "line": 22,
+              "function": null
+            },
+            {
+              "name": "flask-sqlalchemy.Column",
+              "package": "flask-sqlalchemy",
+              "line": 23,
+              "function": null
+            },
+            {
+              "name": "flask-sqlalchemy.String",
+              "package": "flask-sqlalchemy",
+              "line": 23,
+              "function": null
+            },
+            {
+              "name": "flask-sqlalchemy.Column",
+              "package": "flask-sqlalchemy",
+              "line": 24,
+              "function": null
+            },
+            {
+              "name": "flask-sqlalchemy.func.now",
+              "package": "flask-sqlalchemy",
+              "line": 24,
+              "function": null
+            },
+            {
+              "name": "flask.jsonify",
+              "package": "flask",
+              "line": 30,
+              "function": "health"
+            },
+            {
+              "name": "flask.route",
+              "package": "flask",
+              "line": 27,
+              "function": "health"
+            },
+            {
+              "name": "flask.request.get_json",
+              "package": "flask",
+              "line": 36,
+              "function": "login"
+            },
+            {
+              "name": "flask.jsonify",
+              "package": "flask",
+              "line": 38,
+              "function": "login"
+            },
+            {
+              "name": "flask.route",
+              "package": "flask",
+              "line": 33,
+              "function": "login"
+            },
+            {
+              "name": "flask.jsonify",
+              "package": "flask",
+              "line": 45,
+              "function": "list_users"
+            },
+            {
+              "name": "flask.route",
+              "package": "flask",
+              "line": 41,
+              "function": "list_users"
+            },
+            {
+              "name": "flask_jwt_extended.jwt_required",
+              "package": "flask-jwt-extended",
+              "line": 42,
+              "function": "list_users"
+            },
+            {
+              "name": "flask.run",
+              "package": "flask",
+              "line": 49,
+              "function": null
+            },
+            {
+              "name": "int",
+              "package": "int",
+              "line": 49,
+              "function": null
+            },
+            {
+              "name": "os.environ.get",
+              "package": "os",
+              "line": 49,
+              "function": null
+            }
+          ]
+        }
+      },
+      "summary": {
+        "total_files": 1,
+        "total_functions": 3,
+        "total_classes": 1,
+        "total_calls": 23,
+        "total_api_calls": 23
+      }
+    },
+    "dependencies": {
+      "declared": {
+        "flask": {
+          "version": "2.3.3",
+          "specifier": "==",
+          "source": "requirements.txt"
+        },
+        "flask-sqlalchemy": {
+          "version": "3.1.1",
+          "specifier": "==",
+          "source": "requirements.txt"
+        },
+        "flask-jwt-extended": {
+          "version": "4.5.3",
+          "specifier": "==",
+          "source": "requirements.txt"
+        },
+        "psycopg2-binary": {
+          "version": "2.9.9",
+          "specifier": "==",
+          "source": "requirements.txt"
+        },
+        "redis": {
+          "version": "5.0.1",
+          "specifier": "==",
+          "source": "requirements.txt"
+        },
+        "python-dotenv": {
+          "version": "1.0.0",
+          "specifier": "==",
+          "source": "requirements.txt"
+        },
+        "gunicorn": {
+          "version": "21.2.0",
+          "specifier": "==",
+          "source": "requirements.txt"
+        },
+        "pytest": {
+          "version": "7.4.3",
+          "specifier": "==",
+          "source": "requirements.txt"
+        }
+      },
+      "count": 8
+    },
+    "dependency_graph": {
+      "flask": {
+        "version": "2.3.3",
+        "latest_version": "3.1.3",
+        "type": "third-party",
+        "status": "declared"
+      },
+      "flask-jwt-extended": {
+        "version": "4.5.3",
+        "latest_version": "4.7.4",
+        "type": "third-party",
+        "status": "declared"
+      },
+      "flask-sqlalchemy": {
+        "version": "3.1.1",
+        "latest_version": "3.1.1",
+        "type": "third-party",
+        "status": "declared"
+      },
+      "os": {
+        "version": "unknown",
+        "latest_version": "unknown",
+        "type": "detected",
+        "status": "missing"
+      }
+    },
+    "fingerprints": {
+      "flask": {
+        "version": "2.3.3",
+        "symbols": [
+          "flask.Flask",
+          "flask.get_json",
+          "flask.jsonify",
+          "flask.request.get_json",
+          "flask.route",
+          "flask.run"
+        ],
+        "raw_symbols": [
+          "flask.Flask",
+          "flask.jsonify",
+          "flask.request.get_json",
+          "flask.route",
+          "flask.run"
+        ]
+      },
+      "os": {
+        "version": "unknown",
+        "symbols": [
+          "os.environ.get",
+          "os.get"
+        ],
+        "raw_symbols": [
+          "os.environ.get"
+        ]
+      },
+      "flask-sqlalchemy": {
+        "version": "3.1.1",
+        "symbols": [
+          "flask-sqlalchemy.Column",
+          "flask-sqlalchemy.SQLAlchemy",
+          "flask-sqlalchemy.String",
+          "flask-sqlalchemy.func.now",
+          "flask-sqlalchemy.now",
+          "flask_sqlalchemy.SQLAlchemy"
+        ],
+        "raw_symbols": [
+          "flask-sqlalchemy.Column",
+          "flask-sqlalchemy.String",
+          "flask-sqlalchemy.func.now",
+          "flask_sqlalchemy.SQLAlchemy"
+        ]
+      },
+      "flask-jwt-extended": {
+        "version": "4.5.3",
+        "symbols": [
+          "flask-jwt-extended.JWTManager",
+          "flask-jwt-extended.jwt_required",
+          "flask_jwt_extended.JWTManager",
+          "flask_jwt_extended.jwt_required"
+        ],
+        "raw_symbols": [
+          "flask_jwt_extended.JWTManager",
+          "flask_jwt_extended.jwt_required"
+        ]
+      },
+      "int": {
+        "version": "unknown",
+        "symbols": [
+          "int",
+          "int.int"
+        ],
+        "raw_symbols": [
+          "int"
+        ]
+      }
+    },
+    "issues": {
+      "missing_dependencies": [
+        "os"
+      ],
+      "unused_dependencies": [
+        "gunicorn",
+        "psycopg2-binary",
+        "pytest",
+        "python-dotenv",
+        "redis"
+      ],
+      "missing_count": 1,
+      "unused_count": 5
+    },
+    "branch": "main",
+    "commit_sha": "58dc9e97ef8484adac5e4d64a57d9f6d45cedf37",
+    "analysis_id": "main_58dc9e9_20260717T055031",
+    "repository_snapshot_id": "23f2000935_GA2Q2_main_58dc9e9"
+  }
+}
